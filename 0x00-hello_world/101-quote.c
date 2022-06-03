@@ -5,7 +5,7 @@
  * main - Entry point
  *
  * Return: Always (1) (Error) if successful
- *  
+ *
  */
 
 int main(void)
