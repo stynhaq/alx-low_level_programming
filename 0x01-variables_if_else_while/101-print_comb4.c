@@ -9,6 +9,7 @@
 int main(void)
 {
 	int ch, n, m;
+
 	for (ch = 48; ch < 58; ch++)
 	{
 		for (n = 48; n < 58; n++)
@@ -35,7 +36,6 @@ int main(void)
 			}
 		}
 	}
-    putchar('\n');
-
-    return (0);
+	putchar('\n');
+	return (0);
 }
