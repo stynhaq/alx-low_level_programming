@@ -25,15 +25,15 @@ int main(void)
 				putchar(n);
 				putchar(m);
 				if (ch == 55 && n == 56 && m == 57)
-                    {
-                    }
-                    else
-                    {
-                        putchar(44);
-                        putchar(' ');
-                    }
-                }
-            }
+                    			{
+                    			}
+                    		else
+                    			{
+                        			putchar(44);
+                        			putchar(' ');
+                   			}
+                	}
+            	}
         }
     }
     putchar('\n');
