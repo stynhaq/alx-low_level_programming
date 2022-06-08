@@ -14,12 +14,12 @@ int main(void)
 
 	for (count = 1; count <= (i / 2); count++)
 	{
-		printf("%li %li ", a, b);
+		printf("%lu, %lu,  ", a, b);
 		a += b;
 		b += a;
 	}
 	if (i % 2 == 1)
-		printf("%li", a);
+		printf("%lu", a);
 
 	printf("\n");
 
