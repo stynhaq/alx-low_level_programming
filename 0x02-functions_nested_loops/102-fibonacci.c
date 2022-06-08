@@ -14,7 +14,7 @@ int main(void)
 
 	for (count = 1; count <= (i / 2); count++)
 	{
-		printf("%lu, %lu,  ", a, b);
+		printf("%lu, %lu, ", a, b);
 		a += b;
 		b += a;
 	}

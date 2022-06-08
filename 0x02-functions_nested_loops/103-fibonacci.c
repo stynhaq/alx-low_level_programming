@@ -18,7 +18,7 @@ int main(void)
 		num1 = num2;
 		num2 = sum;
 		if ((sum <= 4000000) && (sum % 2 == 0))
-			sum_of_evens += sum;
+			sum_of_even_num += sum;
 	}
 	printf("%d\n", sum_of_even_num);
 
