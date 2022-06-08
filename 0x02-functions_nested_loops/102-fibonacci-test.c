@@ -1,3 +1,4 @@
+#include "main.h"
 #include<stdio.h>
 
 /**
@@ -9,24 +10,24 @@
 int main(void)
 {
 	int x, y;
-	long count1, count2, count;
+	long f1, f2, next;
 
-	count1 = 1;
-	count2 = 2;
+	f1 = 1;
+	f2 = 2;
 	y = 50;
 
 	for (x = 0; x < y; x++)
 	{
 		if (x == 49)
 		{
-			printf("%lu", count1);
+			printf("%lu", f1);
 		}
 		else
 		{
-			printf("%lu, ", count1);
-			count = count1 + count2;
-			count1 = count2;
-			count2 = count;
+			printf("%lu, ", f1);
+			next = f1 + f2;
+			f1 = f2;
+			f2 = next;
 		}
 	}
 
