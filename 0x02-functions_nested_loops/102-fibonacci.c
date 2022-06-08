@@ -8,9 +8,9 @@
 
 int main(void)
 {
-	int x,y;
-    	long num1, num2, count;
-
+	int x, y;
+	long num1, num2, count;
+	
     	num1 = 1;
     	num2 = 2;
     	y = 50;
