@@ -1,16 +1,33 @@
 #include "main.h"
+#include <string.h>
 
 /**
- * _strncat - a function that concatenate two strings
- * @dest: string to be appended to
- * @src: string to append
- * @n: append n number of bytes(chars)
- * Return: the concatenated string
+ * _strpbrk - a function that searches a string for any of a set of bytes
+ * @accept: first character matched
+ * @s: string to search against
+ * Return: number of bytes matched or NULL
  */
 
-
-
+char *_strpbrk(char *s, char *accept)
 {
+	int i = 0;
+	int k;
 
+	while (s[i] != '\0')
+	{
+		for (k = 0; accept[k] != '\0'; k++)
+		{
+			if (s[i] == accept[k])
+			{
+				s = &s[i];
+				return (s);
+			}
+			
+		}
 
+		i++;
+
+	}
+
+	return (NULL);
 }
