@@ -1,16 +1,32 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _strncat - a function that concatenate two strings
- * @dest: string to be appended to
- * @src: string to append
- * @n: append n number of bytes(chars)
- * Return: the concatenated string
+ * print_diagsums - a function that prints sum of the two diagonals of a matrix
+ * @a: input matrix
+ * @size: size of matrix
+ * Return: Nothing
  */
 
-
-
+void print_diagsums(int *a, int size)
 {
 
+	int diagonal_sum_1 = 0;
+	int diagonal_sum_2 = 0;
+	int row, i;
+
+	for (row = 0; row < size; row++)
+	{
+		i = (row * size) + row;
+		diagonal_sum_1 += a[i];
+	}
+
+	for (row = 1; row <= size; row++)
+	{
+		i = (row * size) - row;
+		diagonal_sum_2 += a[i];
+	}
+
+	printf("%d, %d\n", diagonal_sum_1, diagonal_sum_2);
 
 }

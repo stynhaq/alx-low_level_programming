@@ -1,16 +1,22 @@
 #include "main.h"
 
 /**
- * _strncat - a function that concatenate two strings
- * @dest: string to be appended to
- * @src: string to append
- * @n: append n number of bytes(chars)
- * Return: the concatenated string
+ * print_chessboard  - a function that prints the chess board
+ * @a: input string
+ * Return: Nothing
  */
 
 
-
+void print_chessboard(char (*a)[8])
 {
+	int row, column;
 
-
+	for (row = 0; row < 8; row++)
+	{
+		for (column = 0; column < 8; column++)
+		{
+			_putchar(a[row][column]);
+		}
+		_putchar('\n');
+	}
 }
