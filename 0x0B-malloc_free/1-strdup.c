@@ -15,25 +15,26 @@ char *_strdup(char *str)
 {
 	char *str2;
 	int i = 0;
+	int len = 0;
 
 	if (str == NULL)
-		return NULL;
+		return (NULL);
 
 	while (*(str + i))
 		len++, i++;
 	len++;
 
-	duplicate_str = malloc(sizeof(char) * len);
+	str2 = malloc(sizeof(char) * len);
 
-	if (duplicate_str == NULL)
+	if (str2 == NULL)
 		return (NULL);
 
 	i = 0;
 	while (i < len)
 	{
-		*(duplicate_str + i) = *(str + i);
+		*(str2 + i) = *(str + i);
 		i++;
 	}
 
-	return (duplicate_str);
+	return (str2);
 }
