@@ -8,9 +8,18 @@
  * @grid: address of the 2D grid
  * @height: height of the 2D array
  *
- * Return: Nothing 
+ * Return: Nothing
  */
 
 void free_grid(int **grid, int height)
 {
+	int i;
+
+	if (grid == NULL)
+		free(grid);
+
+	for (i = 0; i < height; i++)
+		free(grid[i]);
+
+	free(grid);
 }
