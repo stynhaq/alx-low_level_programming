@@ -6,7 +6,7 @@
  * @d: struct pointer
  * @name: dog's name
  * @age: age pf dog
- * @ower: dog owner
+ * @owner: dog owner
  *
  *
  */
